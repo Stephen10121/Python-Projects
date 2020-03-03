@@ -2,16 +2,16 @@ import os as OS
 
 def login():
   print("Login")
-  def usernamepick()
+  def usernamepick():
     lusername = input("What is your username?")
-    lf = open("username.txt" "r")
+    lf = open("username.txt" , "r")
     if lf.mode == 'r':
       lcontents = lf.read()
       if lusername in lcontents:
         lpassword = input("What is your password?")
         OS.chdir(lusername)
         def passwordpick():
-          lf2 = open("userninfo.txt" , "r")
+          lf2 = open("userinfo.txt" , "r")
           if lf.mode == 'r':
             l2contents = lf2.read()
             if lpassword in l2contents:
