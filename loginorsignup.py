@@ -6,7 +6,7 @@ def login():
 
 def signup():
   print("Signup")
-  f=open("username.txt", "a+")
+  f=open("username.txt", "r")
   name = input("What is your name? ")
   age = input("How old are you? ")
   def userpik():
