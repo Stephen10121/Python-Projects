@@ -2,7 +2,29 @@ import os as OS
 
 def login():
   print("Login")
-  print("Still Not Finished")
+  def usernamepick()
+    lusername = input("What is your username?")
+    lf = open("username.txt" "r")
+    if lf.mode == 'r':
+      lcontents = lf.read()
+      if lusername in lcontents:
+        lpassword = input("What is your password?")
+        OS.chdir(lusername)
+        def passwordpick():
+          lf2 = open("userninfo.txt" , "r")
+          if lf.mode == 'r':
+            l2contents = lf2.read()
+            if lpassword in l2contents:
+              print("Hello" , lusername)
+            else:
+              print("Wrong Password")
+              passwordpick()
+        passwordpick()
+      else:
+        print("Username not Found")
+        usernamepick()
+  usernamepick()
+
 
 def signup():
   print("Signup")
