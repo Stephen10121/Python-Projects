@@ -28,6 +28,7 @@ def signup():
             write2.write("\r\n")
             OS.mkdir(username)
             OS.chdir(username)
+            OS.mkdir("Files")
             write = open("userinfo.txt","w+")
             write.write(name)
             write.write("\r\n")
